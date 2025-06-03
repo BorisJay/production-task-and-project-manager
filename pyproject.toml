@@ -1,0 +1,21 @@
+[project]
+name = "production-task-and-project-manager"
+version = "0.1.0"
+description = "Система управління задачами та проектами для виробничого обладнання"
+dependencies = [
+    "django",
+    "psycopg2",
+    "django-debug-toolbar",
+    "django-widget-tweaks"
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+[tool.ruff]
+line-length = 88
+extend-select = ["B", "C", "E", "F", "W"]
+
+[tool.bandit]
+skips = ["B101"]

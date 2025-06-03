@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+
+# Django
+*.log
+staticfiles/
+media/
+
+# VS Code / PyCharm
+.vscode/
+.idea/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.tar
+*.log
+
+# Environments
+.venv/
+.envrc
+
+# Pyproject (uv, poetry, pip)
+*.lock
