@@ -24,6 +24,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install black flake8 ruff bandit
 
+    - name: Install pytest
+      run: pip install pytest
+
+    - name: Run tests with pytest
+      run: pytest
+
     - name: Run Black
       run: black --check .
 
