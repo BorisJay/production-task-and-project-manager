@@ -9,13 +9,18 @@ dependencies = [
     "django-widget-tweaks"
 ]
 
-[tool.black]
-line-length = 88
-target-version = ["py313"]
+[tool.flake8]
+max-line-length = 120
+exclude = [".venv"]
 
 [tool.ruff]
-line-length = 88
-extend-select = ["B", "C", "E", "F", "W"]
+line-length = 120
+exclude = [".venv"]
+#extend-select = ["B", "C", "E", "F", "W"]
+
+[tool.black]
+line-length = 120
+target-version = ["py313"]
 
 [tool.bandit]
 skips = ["B101"]
